@@ -1,0 +1,44 @@
+---
+Language: Cpp
+BasedOnStyle: LLVM
+
+# 与本项目现有的江协风格保持一致：4 列 Tab 缩进、Allman 大括号。
+UseTab: Always
+TabWidth: 4
+IndentWidth: 4
+ContinuationIndentWidth: 4
+BreakBeforeBraces: Allman
+
+# 短语句也独占一行，避免控制流程挤在一起。
+AllowShortBlocksOnASingleLine: Never
+AllowShortCaseLabelsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: None
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine: false
+
+# 一行尽量控制在 100 列以内；长参数和长表达式按逻辑换行。
+ColumnLimit: 100
+BinPackArguments: true
+BinPackParameters: true
+AlignAfterOpenBracket: Align
+BreakBeforeBinaryOperators: NonAssignment
+
+# 保留源码原有的 include 顺序和中文注释措辞。
+SortIncludes: Never
+ReflowComments: false
+MaxEmptyLinesToKeep: 1
+KeepEmptyLinesAtTheStartOfBlocks: false
+
+# 只对齐宏定义和行尾注释；普通声明、赋值保持自然间距。
+AlignConsecutiveAssignments: None
+AlignConsecutiveDeclarations: None
+AlignConsecutiveMacros: Consecutive
+AlignTrailingComments: true
+
+DerivePointerAlignment: false
+PointerAlignment: Right
+SpaceBeforeParens: ControlStatements
+SpacesInParentheses: false
+IndentCaseLabels: false
+IndentPPDirectives: None
+...

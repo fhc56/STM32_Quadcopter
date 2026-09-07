@@ -1,0 +1,25 @@
+# Keil generated folders
+**/Objects/
+**/Listings/
+
+# Keil generated files
+*.o
+*.d
+*.axf
+*.hex
+*.bin
+*.map
+*.dep
+*.lnp
+*.crf
+
+# Debug / temporary files
+*.log
+*.tmp
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Keil user-specific settings
+*.uvguix.*
