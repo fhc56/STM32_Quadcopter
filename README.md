@@ -1,106 +1,70 @@
-\# STM32 Quadcopter
-
-
+# STM32 Quadcopter
 
 A custom STM32F103-based quadcopter project including flight-control firmware, remote-controller firmware, custom PCB design, and hardware implementation.
 
+![Drone](Drone_Fig.jpg)
 
-
-!\[Drone](Drone\_Fig.jpg)
-
-
-
-\## Project Overview
-
-
+## Project Overview
 
 This project is a self-developed quadcopter system based on STM32F103.
 
-
-
 The project currently includes:
 
+- Flight controller firmware
+- Remote controller firmware
+- Custom flight controller PCB
+- MPU6050 attitude sensing
+- BMP280 barometer
+- Bluetooth communication
+- Motor PWM control
+- FreeRTOS integration
 
+## Hardware
 
-\- Flight controller firmware
+- STM32F103
+- MPU6050
+- BMP280
+- HC-08 Bluetooth module
+- 8520 coreless motors
+- Custom flight controller PCB
 
-\- Remote controller firmware
+## Software
 
-\- Custom flight controller PCB
+- STM32 Standard Peripheral Library
+- FreeRTOS
+- C language
+- Keil MDK
+- Quaternion attitude calculation
+- Mahony attitude estimation
+- PID control
 
-\- MPU6050 attitude sensing
-
-\- BMP280 barometer
-
-\- Bluetooth communication
-
-\- Motor PWM control
-
-\- FreeRTOS integration
-
-
-
-\## Hardware
-
-
-
-\- STM32F103
-
-\- MPU6050
-
-\- BMP280
-
-\- HC-08 Bluetooth module
-
-\- 8520 coreless motors
-
-\- Custom flight controller PCB
-
-
-
-\## Software
-
-
-
-\- STM32 Standard Peripheral Library
-
-\- FreeRTOS
-
-\- C language
-
-\- Keil MDK
-
-\- Quaternion attitude calculation
-
-\- Mahony attitude estimation
-
-\- PID control
-
-
-
-\## Repository Structure
-
-
+## Repository Structure
 
 ```text
-
-STM32\_Quadcopter
-
-├── Drone\_Code
-
+STM32_Quadcopter
+├── Drone_Code
 │   └── Flight controller firmware
-
-├── RmtCtrler\_Code
-
+├── RmtCtrler_Code
 │   └── Remote controller firmware
-
-├── Drone\_FlightCtrl\_Board.eprj2
-
+├── Drone_FlightCtrl_Board.eprj2
 │   └── Flight controller PCB project
-
-├── Drone\_Fig.jpg
-
+├── Drone_Fig.jpg
 │   └── Quadcopter image
-
 └── README.md
+```
 
+## Current Progress
+
+- [x] Custom STM32F103 flight controller board
+- [x] MPU6050 sensor acquisition
+- [x] Bluetooth communication
+- [x] Four-motor PWM control
+- [x] Remote controller firmware
+- [x] FreeRTOS integration
+- [ ] Stable attitude control
+- [ ] Stable hovering
+- [ ] Further flight testing
+
+## Notes
+
+This project is still under development and will continue to be improved.
